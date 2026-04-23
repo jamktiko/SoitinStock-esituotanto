@@ -1,0 +1,27 @@
+{
+  "name": "express_basics",
+  "version": "1.0.0",
+  "description": "Express-kokeilua",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "tuito",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.19",
+    "eslint": "^9.20.1",
+    "eslint-config-google": "^0.14.0"
+  }
+}

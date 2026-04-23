@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Otsikko</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p>Olet nyt sivulla sivu.html jonka tarjoaa Express!</p>
+    <p id="server-text">Ladataan...</p>
+
+    <script>
+      fetch('/message')
+        .then((res) => res.json())
+        .then((data) => {
+          document.getElementById('server-text').textContent = data.message;
+        })
+        .catch((err) => {
+          console.error(err);
+          document.getElementById('server-text').textContent =
+            'Virhe haettaessa viestiä';
+        });
+    </script>
+  </body>
+</html>
